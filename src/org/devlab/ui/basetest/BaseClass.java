@@ -145,7 +145,7 @@ public class BaseClass {
 	public void afterSuiteMethod() throws IOException {
 
 		// code to create result file in html file fomrat post execution
-		File exechtmlReport = new File("Report.html");
+		File exechtmlReport = new File("target/Report.html");
 
 		if (exechtmlReport.exists()) {
 			exechtmlReport.delete();
