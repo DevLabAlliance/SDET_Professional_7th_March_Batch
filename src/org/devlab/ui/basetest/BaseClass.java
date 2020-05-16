@@ -101,7 +101,7 @@ public class BaseClass {
 
 			File fle = ((TakesScreenshot) driver.get()).getScreenshotAs(OutputType.FILE);
 
-			Files.copy(fle, new File("Screenshot/" + browser_name.get() + "_" + itr.getName() + ".png"));
+			Files.copy(fle, new File("target/Screenshot/" + browser_name.get() + "_" + itr.getName() + ".png"));
 
 		} else {
 			status = "PASS";
@@ -136,7 +136,7 @@ public class BaseClass {
 			Assert.fail("Failed to read the content of testdata file" + e.toString());
 		}
 
-		File imageFolder = new File("Screenshot");
+		File imageFolder = new File("target/Screenshot");
 
 		imageFolder.mkdir();
 	}
@@ -171,7 +171,7 @@ public class BaseClass {
 						str = str + "<td style=\"color:green\">" + executioninfo.get(testcasename).get(browsers)
 								+ "</td>";
 					} else if (executioninfo.get(testcasename).get(browsers).equalsIgnoreCase("FAIL")) {
-						str = str + "<td ><a target =\"_blank\" href = \""+"Screenshot/"+browsers+"_"+testcasename+".png" +"\" style=\"color:red\">" + executioninfo.get(testcasename).get(browsers)
+						str = str + "<td ><a target =\"_blank\" href = \""+"target/Screenshot/"+browsers+"_"+testcasename+".png" +"\" style=\"color:red\">" + executioninfo.get(testcasename).get(browsers)
 								+ "</a></td>";
 					}
 				} else {
