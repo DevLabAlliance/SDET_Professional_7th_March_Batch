@@ -171,7 +171,7 @@ public class BaseClass {
 						str = str + "<td style=\"color:green\">" + executioninfo.get(testcasename).get(browsers)
 								+ "</td>";
 					} else if (executioninfo.get(testcasename).get(browsers).equalsIgnoreCase("FAIL")) {
-						str = str + "<td ><a target =\"_blank\" href = \""+"target/Screenshot/"+browsers+"_"+testcasename+".png" +"\" style=\"color:red\">" + executioninfo.get(testcasename).get(browsers)
+						str = str + "<td ><a target =\"_blank\" href = \""+"Screenshot/"+browsers+"_"+testcasename+".png" +"\" style=\"color:red\">" + executioninfo.get(testcasename).get(browsers)
 								+ "</a></td>";
 					}
 				} else {
