@@ -1,5 +1,3 @@
-Cucumber Automation Framework
-
-![Execution flow](executionAutomationFlow.png)
+API Automation code example
 
 
