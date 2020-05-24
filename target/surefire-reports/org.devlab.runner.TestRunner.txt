@@ -1,9 +1,0 @@
--------------------------------------------------------------------------------
-Test set: org.devlab.runner.TestRunner
--------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.002 s <<< FAILURE! - in org.devlab.runner.TestRunner
-initializationError(org.devlab.runner.TestRunner)  Time elapsed: 0.002 s  <<< ERROR!
-org.junit.runners.model.InvalidTestClassError: 
-Invalid test class 'org.devlab.runner.TestRunner':
-  1. Method reportgenerate() should be static
-
